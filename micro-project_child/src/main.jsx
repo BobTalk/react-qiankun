@@ -8,7 +8,6 @@ const initQianKun = () => {
   renderWithQiankun({
     // 当前应用在主应用中的生命周期
     mount(props) {
-      console.log('props: ', props);
       render(props.container)
       //  可以通过props读取主应用的参数：msg
       // 监听主应用传值
@@ -26,7 +25,7 @@ const initQianKun = () => {
 
 const render = (container) => {
   // 如果是在主应用的环境下就挂载主应用的节点，否则挂载到本地
-  const appDom = container ? container : document.getElementById('root')
+  const appDom = container ? container : document.getElementById('micro-box')
   ReactDOM.createRoot(appDom).render(
     <BrowserRouter>
       <App />
