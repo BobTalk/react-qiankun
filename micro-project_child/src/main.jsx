@@ -1,6 +1,8 @@
-import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
+import './assets/styles/reset.css'
+import './assets/styles/tailwind.css'
+
 import { BrowserRouter } from 'react-router-dom'
 import { renderWithQiankun, qiankunWindow } from 'vite-plugin-qiankun/dist/helper'
 

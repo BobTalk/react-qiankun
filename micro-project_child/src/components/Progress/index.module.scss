@@ -1,0 +1,6 @@
+.progress{
+  --height:6px;
+  height: var(--height);
+  border-radius: calc(var(--height) / 2);
+  overflow: hidden;
+}
